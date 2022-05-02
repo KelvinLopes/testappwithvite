@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Tweet } from "./components/Tweet";
 
+import './App.css';
 
 function App() {
  
@@ -22,7 +23,18 @@ function App() {
         return <Tweet text={tweet} />
       })}
 
-      <button onClick={createTweet}>Adicionar tweet</button>
+      <button 
+      onClick={createTweet}
+      style={{
+        backgroundColor:'#8257e6',
+        border:0,
+        padding: '6px 12px',
+        borderRadius: '15px',
+        color:'#FFF'
+      }}
+      >
+        Adicionar tweet
+      </button>
     </div>
   );
 }
